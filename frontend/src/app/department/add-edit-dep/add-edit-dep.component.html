@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label class="form-label">Department Name:</label>
+    <input type="text" class="form-control" [(ngModel)]="DepartmentName" placeholder="Enter Department Name">
+</div>
+<hr>
+<button class="btn btn-success" (click)="addDepartment()" *ngIf="dep.DepartmentId==0">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus" viewBox="0 0 18 18">
+        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+    </svg>Add
+</button>
+<button class="btn btn-success" (click)="updateDepartment()" *ngIf="dep.DepartmentId!=0">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 18 18">
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+    </svg>Update
+</button>
